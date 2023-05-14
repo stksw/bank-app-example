@@ -1,7 +1,7 @@
 version: '3.9'
 services:
-  postgres:
-    container_name: postgres
+  db:
+    container_name: bank-db
     image: postgres:14-alpine
     ports:
       - 5432:5432
@@ -22,5 +22,3 @@ services:
   #     - postgres
   #   entrypoint: ['/app/wait-for.sh', 'postgres:5432', '--', '/app/start.sh']
   #   command: ['/app/main']
-
-volumes:
